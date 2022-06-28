@@ -1,6 +1,3 @@
-# здесь модель SQLAlchemy для сущности, также могут быть дополнительные методы работы
-# с моделью (но не с базой)
-
 from app.setup_db import db
 from marshmallow import Schema, fields
 
