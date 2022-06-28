@@ -1,8 +1,3 @@
-# основной файл приложения. здесь конфигурируется фласк, сервисы, SQLAlchemy и все остальное
-# что требуется для приложения.
-# этот файл часто является точкой входа в приложение
-
-
 from flask import Flask
 from flask_restx import Api
 from app.config import Config
