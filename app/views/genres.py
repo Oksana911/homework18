@@ -1,4 +1,6 @@
 from flask_restx import Resource, Namespace
+
+from app.container import genre_service
 from app.dao.model.genre import genre_schema, genres_schema
 
 genre_ns = Namespace('genres')
@@ -14,5 +16,5 @@ class GenresView(Resource):
 @genre_ns.route('/<int:genre_id>')
 class GenreView(Resource):
     def get(self, genre_id: int):
-        movie = genre_service.get_one(genre_id)
-        return genre_schema.dump(movie), 200
+        genre = genre_service.get_one(genre_id)
+        return genre_schema.dump(genre), 200
