@@ -42,4 +42,4 @@ if __name__ == "__main__":
     app = create_app(app_config)
     configure_app(app)
     # load_data()
-    app.run(host="localhost", port=10001)
+    app.run(host="localhost", port=5000)
